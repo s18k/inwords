@@ -36,7 +36,7 @@ setup(
     url='https://github.com/s18k/inwords',
     
 	download_url='{0}/archive/{1}-{2}'.format(base_url, package_name,version),
-    packages=['activizer'],
+    packages=['inwords'],
     include_package_data=True,
     zip_safe=False,
     install_requires=parse_requirements("requirements.txt"),
