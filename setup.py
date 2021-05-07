@@ -1,7 +1,7 @@
 import re
 from setuptools import setup
 
-version = '1.0.5'
+version = '1.0.0'
 
 from os import path
 this_directory = path.abspath(path.dirname(__file__))
@@ -22,18 +22,18 @@ def parse_requirements(file_name):
 
     return requirements
 
-package_name='activizer'
-base_url = 'https://github.com/s18k/ativizer/'
+package_name='inwords'
+base_url = 'https://github.com/s18k/inwords/'
 setup(
-    name='activizer',
+    name='inwords',
     version=version,
-    description='An Interface for Active Learning',
+    description='A Python package to spell out a number',
     author='Shreyas Kamath',
     author_email='shreyaskamath18@gmail.com',
     license='GNU General Public License v3.0',
 	long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/s18k/activizer',
+    url='https://github.com/s18k/inwords',
     
 	download_url='{0}/archive/{1}-{2}'.format(base_url, package_name,version),
     packages=['activizer'],
