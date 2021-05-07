@@ -101,9 +101,11 @@ def convert(number):
 			counter+=1
 			temp_num = temp_num//10
 	tts = gTTS(text=words,lang='en',slow=False)
-	date_string = datetime.datetime.now().strftime("%d%m%Y%H%M%S")
-	filename = date_string+".mp3"
-	tts.save(filename)
-	playsound(filename)
+	name = words+".mp3"
+	try:
+		tts.save(name)
+	except:
+		pass
+	playsound(name)
 	
 		
