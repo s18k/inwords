@@ -99,7 +99,11 @@ def convert(number):
 			counter+=1
 			temp_num = temp_num//10
 	myobj = gTTS(text=words, lang='en', slow=False)
+	try:
+		os.remove("inwords.mp3")
+	except:
+		pass
 	myobj.save("inwords.mp3")
 	playsound("inwords.mp3")
-	os.remove("inwords.mp3")
+	
 		
