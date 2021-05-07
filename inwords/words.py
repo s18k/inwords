@@ -2,9 +2,11 @@ import math
 from gtts import gTTS
 import os
 from playsound import playsound
+import datetime
 
 
 def convert(number):
+	
 	if(number==0):
 		words = "Zero"
 	else:
@@ -98,12 +100,10 @@ def convert(number):
 						words = singles[current]+addition+words
 			counter+=1
 			temp_num = temp_num//10
-	myobj = gTTS(text=words, lang='en', slow=False)
-	try:
-		os.remove("inwords.mp3")
-	except:
-		pass
-	myobj.save("inwords.mp3")
-	playsound("inwords.mp3")
+	tts = gTTS(text=words,lang='en',slow=False)
+	date_string = datetime.datetime.now().strftime("%d%m%Y%H%M%S")
+	filename = date_string+".mp3"
+	tts.save(filename)
+	playsound(filename)
 	
 		

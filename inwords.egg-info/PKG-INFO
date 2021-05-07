@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: inwords
-Version: 1.0.2
+Version: 1.0.3
 Summary: A Python package to spell out a number
 Home-page: https://github.com/s18k/inwords
 Author: Shreyas Kamath
 Author-email: shreyaskamath18@gmail.com
 License: GNU General Public License v3.0
-Download-URL: https://github.com/s18k/inwords//archive/inwords-1.0.2
+Download-URL: https://github.com/s18k/inwords//archive/inwords-1.0.3
 Description: 
         <h1 align="center"> Inwords </h1>
         
